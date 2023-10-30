@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title> FORMS</title>
+</head>
+<body>
+    
+    <form>
+	<h3> Welcome User Please fill the given Form </h3>
+    	<hr>
+
+    	<h4> Text Box </h4>
+         <label>Name:</label>
+         <input type="text" 
+         placeholder="Enter the Name" pattern=[a-zA-Z0-9]{3,15} required
+           title ="User Enter your name...!">
+	 <p> 1.Name should contain only characters</p>
+ 	 <p> 2.Name should conatin minimum 3 characters and maximum 15 characters
+          <br><br>
+	
+       <h4> Number Box</h4>
+         <label> Age:</label>
+ 	 <input type="number" min="18" max="29" title="user Enter age...!">
+	<p>1.minimum age is 18 and maximum age is 29</p>
+         <p>2.if we are not using max and min value then uper value is 1 and starting value is -1</p>
+         <br>
+ 	 
+        <h4> Phone Number Box</h4>
+         <label> Phone Number</label>
+ 	 <input type="text" 
+	  pattern="^[7-9]{1}[0-9]{9}$" required
+           title="Enter a proper phone number"
+           placeholder="Enter phone Number">
+         <p> User Enter the proper phone number that first number should start in between 7-9 and rest 9 number in [0-9]</p>
+	
+ 	 <br><br>
+
+	 <h4> Email Box</h4>
+          <label> Email</label>
+       	  <input type="email"
+           placeholder ="Enter Email"
+           pattern="[a-z0-9$%^]+@[a-z]+.[a-z]{2,3}"
+           title="Enter proper Email" required>
+	  <br><br>
+           
+         <input type="submit" required>
+
+     </form>
+         
+     
+
+</body>
+</html>
